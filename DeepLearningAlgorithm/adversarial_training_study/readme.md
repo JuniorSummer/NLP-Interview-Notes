@@ -83,7 +83,7 @@ GAN 的主要结构包括一个生成器 G（Generator）和一个判别器 D（
 
 step 1: 初始化：对判别器 D 的参数 $\theta_d$ 和生成器 G 的参数 $\theta_g$；
 
-step 2: 生成器“伪造”生成样本：首先，从真实样本中采样 $m$ 个样本 $\{x^1, x^2, \ldots x^m\right\}$；然后,从先验分布噪声中采样 $m$ 个噪声样本 ${z^1, z^2, \ldots, z^m}$；接下去，利用生成器“伪造” $m$ 个新样本 $\{\tilde{\boldsymbol{x}}^1, \tilde{\boldsymbol{x}}^2, \ldots, \tilde{\boldsymbol{x}}^m\right\}$；最后，固定生成器 G。
+step 2: 生成器“伪造”生成样本：首先，从真实样本中采样 $m$ 个样本 $\{x^1, x^2, \ldots x^m\}$；然后,从先验分布噪声中采样 $m$ 个噪声样本 ${z^1, z^2, \ldots, z^m}$；接下去，利用生成器“伪造” $m$ 个新样本 $\{\tilde{\boldsymbol{x}}^1, \tilde{\boldsymbol{x}}^2, \ldots, \tilde{\boldsymbol{x}}^m\}$；最后，固定生成器 G。
 
 step 3：判别器“鉴别”生成样本：通过对判别器 D 进行训练，以让它尽可能准确的“鉴别”出生成样本。
 
